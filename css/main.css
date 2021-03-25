@@ -1,0 +1,296 @@
+:root {
+  --search-box-width: 584px;
+}
+
+
+body {
+  font-family: arial,sans-serif;
+}
+
+.navcontainer {
+    display: flex;
+    height: 4em;
+  }
+
+.nbox0 {
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+  
+  .nbox1 {
+    flex: 4;
+  }
+  
+  .nbox2 {
+    display: flex;
+    justify-content: flex-end; 
+    flex-basis: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  li {
+    margin: .5em;
+    flex: 1;
+}
+
+.padleft {
+  padding-left: 12px;
+}
+
+  .navlink {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 14px;
+  
+  }
+
+  .navimg {
+    max-width: 20px;
+  }
+  .navimg2 {
+    max-width: 40px;
+  }
+
+  .logocontainer {
+    height: 19.5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo {
+    margin: auto;
+    padding: 194px;
+    min-width: 570px;
+  }
+
+  .searchcontainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  #search {
+    position: relative;
+    height: 3em;
+    padding: 8px;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: rgba(75,75,75, 0.1);
+    width: var(--search-box-width);
+    box-shadow: 0px 5px 20px -16px;
+    z-index: 0;
+    text-indent: 2.8rem;
+}
+
+#searchbutton {
+  height: 16px;
+  position: relative;
+  top: 14px;
+  z-index: 1;
+  left: 40px;
+
+}
+
+#micbutton {
+  height: 24px;
+  position:relative;
+  top: 10px;
+  right: 40px;
+}
+
+.buttoncontainer {
+  display:flex;
+  height: 8em;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+input[type=button] {
+  font-weight: 0;
+  min-width: 54px;
+  line-height: 27px;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid #f8f9fa;
+  text-align: center;
+  margin-right: 8px;
+  margin-left: 8px;
+  background-color: #f8f9fa;
+}
+
+input[type=button]:hover {
+  font-weight: 0;
+  min-width: 54px;
+  line-height: 27px;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: 0px 1px 0px 0px rgb(180, 180, 180);
+  text-align: center;
+  margin-right: 8px;
+  margin-left: 8px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.shortcutcontainer {
+  display:flex;
+  height: 12.2em;
+  justify-content: center;
+}
+
+.shortcutbox {
+  width: 13em;
+  text-align: center;
+  line-height: 8.7em;
+  font-size: .86rem;
+
+
+}
+
+.circleicon {
+
+  background-color: rgb(241, 243, 244);
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  margin: auto;
+  position: relative;
+  top: 36px;
+}
+
+#shortcuticon {
+  width: 45%;
+  height: 45%;
+  margin: auto;
+  position: relative;
+  top: 13px;
+  image-rendering: pixelated;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  background-color: rgb(241, 243, 244);
+  position: fixed;
+  left: 0em;
+  bottom: 0em;
+  width: 100%;
+}
+
+.fbox1 {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  width: 50%;
+  flex-shrink: 1;
+}
+
+.fbox2 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  flex-shrink: 3;
+}
+
+.fbox3 {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 50%;
+  flex-shrink: 1;
+}
+
+.ulfooter {
+  margin-left: 40px;
+  margin-right: -20px;
+  list-style-type: none;
+}
+
+.lifooter {
+  width: 117px;
+  margin: -10px;
+}
+
+@media (min-width: 560px) { :root {
+  --search-box-width: 449px;
+  }
+}
+
+@media (max-width: 860px) { .footer {
+  height: 8em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding-top: 14px;
+  }
+  .fbox1 {
+    order: 2;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+  }
+  .fbox2 {
+    order: 1;
+    margin: 0px;
+    padding-bottom: 7px;
+    justify-content: center;
+    align-items: center;
+  }
+  .fbox3 {
+    order: 3;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .ulfooter {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .lifooter {
+    margin: -10px;
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 627px) { :root {
+  --search-box-width: 584px;
+  }
+}

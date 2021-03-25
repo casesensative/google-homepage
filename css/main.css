@@ -1,5 +1,5 @@
 :root {
-  --search-box-width: 584px;
+  --search-box-width: 649px;
 }
 
 
@@ -65,15 +65,17 @@ body {
   }
 
   .logocontainer {
-    height: 19.5em;
+    height: 15em;
     display: flex;
     justify-content: center;
   }
 
   #logo {
     margin: auto;
-    padding: 194px;
-    min-width: 570px;
+    padding-top: 85px;
+    min-width: 280px;
+    max-width: 570px;
+    image-rendering: pixelated;
   }
 
   .searchcontainer {
@@ -241,7 +243,7 @@ input[type=button]:hover {
 }
 
 @media (min-width: 560px) { :root {
-  --search-box-width: 449px;
+  --search-box-width: 649px;
   }
 }
 
